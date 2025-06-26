@@ -1,0 +1,7 @@
+{
+  "name": "vijay-main-root",
+  "private": true,
+  "workspaces": [
+    "VIJAY-main"
+  ]
+}

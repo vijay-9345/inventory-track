@@ -1,0 +1,66 @@
+  /* AddItem.css */
+
+.add-item-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #ddd; /* Border around the entire table */
+}
+
+.inventory-table th, .inventory-table td {
+  border: 1px solid #ddd; /* Borders between cells */
+  padding: 12px 20px; /* Space between text and borders */
+  text-align: left;
+}
+
+.inventory-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.inventory-table td {
+  background-color: #fff;
+  color: #333;
+}
+
+.inventory-table tr:nth-child(even) td {
+  background-color: #f9f9f9; /* Alternate row color for readability */
+}
+
+.inventory-table tr:hover td {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+  
