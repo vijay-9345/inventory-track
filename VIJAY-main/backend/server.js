@@ -8,11 +8,9 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://vijay824851:vijay824851@cluster0.sj4wtkg.mongodb.net/inventory?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 5000, // 5 seconds timeout
+// Connect to MongoDB locally
+mongoose.connect('mongodb://127.0.0.1:27017/inventory', {
+  serverSelectionTimeoutMS: 5000 // 5 seconds timeout
 });
 
 const db = mongoose.connection;
@@ -35,3 +33,4 @@ app.use('/api/inventory', inventoryRoutes); // Mount the inventory routes
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
